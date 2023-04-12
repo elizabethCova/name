@@ -1,0 +1,178 @@
+.image{
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+}
+*{
+	padding: o;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+:root{
+	--bg-color: #222327;
+	--text-color: #fff;
+	--main-color: #29fe53;
+}
+
+body{ 
+	color: var(--text-color);
+ }
+
+ header{
+ 	position: fixed;
+ 	with: 100%;
+ 	top: 0;
+ 	z-index: 1000;
+ 	display: flex;
+ 	aling-items: ceenter;
+ 	justify-content: space-between;
+ 	backgroung: transparent;
+ 	padding: 28px 12%;
+ 	transition: all .50s ease;
+ }
+
+ .logo{
+ 	display: flex;
+ 	align-items: ceenter;
+ }
+
+ .logo i{
+ 	color: var(--text-color);
+ 	font-size: 28px;
+ 	margin-right: 3px;
+ }
+
+ .logo span{
+ 	color: var(--text-color);
+ 	font-size: 1.1rem;
+ 	font-family: Poppins;
+ 	font-weight: 600;
+ }
+
+ .navbar{
+ 	display: flex;
+ 	text-decoration: none;
+ }
+
+ .navbar a{
+ 	color: var(--text-color);
+ 	font-size: 1.1rem;
+ 	font-weight: 500;
+ 	font-family: Poppins;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+    text-decoration: none;
+ }
+
+ .navbar a:hover{
+ 	color: #4ffbdf;
+ }
+
+ .navbar a.active{
+ 	color: var(--main-color);
+ }
+
+
+
+}
+
+#menu-icon{
+	font-size: 35px;
+	color: var(--text-color); 
+	cursor: pointer;
+	display: none;
+	z-index: 10001;
+}
+
+@media (max-width: 1280px){
+	header{
+		padding: 14px 2%;
+		transition: .2;
+	}
+	.navbar a{
+		padding: 5px 0;
+		margin: 0px 20px;
+	}
+}
+
+
+@media (max-width: 1090px){
+	#menu-icon{
+		display: block;
+		font-size: 30px;
+		padding-left: 110px;
+	}
+	.navbar{
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		width: 220px;
+		height: 29vh;
+		background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		border-radius: 10px;
+		transform: all .50 ease;
+	}
+	.navbar a{
+		display: block;
+		margin: 12px 0;
+		padding: 0px 25px;
+		transition: all .50 ease;
+	}
+	navbar a:hover{
+		color: var(--text-color);
+		transform: translateY(5px);
+	}
+	.navbar a.active{
+		color: var(--text-color);
+		text-decoration: none;
+	}
+	.navbar.open{
+		right: 2%;
+	}
+}
+
+h1{
+	z-index: 10;
+	color: #000;
+	top: -300px;
+	text-align: center;
+	font-family: Megrim;
+}
+
+.h2-1{
+	z-index:11;
+	color: #fff;
+	position: relative;
+	top: -200px;
+	text-align: center;
+	font-family: Major Mono Display;
+	font-size: 12px;
+	padding-right: 20px;
+	padding-left: 20px;
+
+}
+
+
+.image{
+
+
+}
+
+
+}
+
+.h2-2{
+	color: black;
+	font-family: Megrim;
+	margin-left: 20px;
+	margin-top: 60px;
+	margin-right: 40px;
+	z-index: 3;
+
+}
